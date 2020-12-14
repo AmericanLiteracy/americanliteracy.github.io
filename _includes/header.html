@@ -22,10 +22,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 					{% for item in site.navigation_header %}
-					<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
+					<li>
                         <li><ul>
-						    <li><a href="{{ item.url }}">{{ item.title }}</a>
-						    <li><a href="{{ item.urlSS }}">{{ item.titleSS }}</a>
+						    <li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
+                              <a href="{{ item.url }}">{{ item.title }}</a>
+						    <li class="item item-nav{% if item.url == page.urlSS %} item-current{% endif %}">
+						      <a href="{{ page.url }}">{{ item.titleSS }}</a>
                             </ul>
 					</li>
 					{% endfor %}
