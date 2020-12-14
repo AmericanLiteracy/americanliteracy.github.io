@@ -23,7 +23,10 @@
                 <ul class="nav navbar-nav navbar-right">
 					{% for item in site.navigation_header %}
 					<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
-						<a href="{{ item.url }}">{{ item.title }}</a>
+                        <li><ul>
+						    <li><a href="{{ item.url }}">{{ item.title }}</a>
+						    <li><a href="{{ item.urlSS }}">{{ item.titleSS }}</a>
+                            </ul>
 					</li>
 					{% endfor %}
                     <li>item-current</li>

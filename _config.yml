@@ -39,11 +39,14 @@ descriptions:
 # Site navigation
 navigation_header:
 - title: Home
-  url: /index.html
-  ss: /ss/index.html
+  titleSS: Hoem
+  url: /index
+  urlSS: /indexSS
 - title: Work
-  url: /work.html
-  ss: /ss/work.html
+  titleSS: Work
+  url: /work
+  urlSS: /workSS
 - title: Contact
-  url: /contact.html
-  ss: /ss/contact.html
+  titleSS: Contact
+  url: /contact
+  urlSS: /contactSS
