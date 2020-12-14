@@ -22,16 +22,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 					{% for item in site.navigation_header %}
-						{% if item.url contains '://' %}
-							{% assign url = item.url %}
-						{% else %}
-							{% assign url = item.url | relative_url %}
-						{% endif %}
 					<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
 						<a href="{{ item.url }}">{{ item.title }}</a>
 					</li>
 					{% endfor %}
+                    <li>item-current</li>
                 <!--<li><ul>
+					<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
                     <li><a href="{{ site.baseurl }}/">Home</a>
                     <li><a href="{{ site.baseurl }}/">Hoem</a> </ul>
                 <li><a href="{{ site.baseurl }}/work">Work</a></li>

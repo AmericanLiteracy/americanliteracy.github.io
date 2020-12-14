@@ -42,8 +42,8 @@ navigation_header:
   url: /index.html
   ss: /ss/index.html
 - title: Work
-  url: /ts/index.html
-  ss: /ss/index.html
+  url: /work.html
+  ss: /ss/work.html
 - title: Contact
-  url: /ts/contact.html
+  url: /contact.html
   ss: /ss/contact.html
