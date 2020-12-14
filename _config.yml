@@ -40,7 +40,7 @@ descriptions:
 navigation_header:
 - title: Home
   titleSS: Hoem
-  url: /index
+  url: /index.html
   urlSS: /ss/index/
 - title: SoundSpel
   titleSS: SoundSpel
