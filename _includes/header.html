@@ -26,8 +26,8 @@
                         <li><ul>
 						    <li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
                               <a href="{{ item.url }}">{{ item.title }}</a>
-						    <li class="item item-nav{% if item.url == page.urlSS %} item-current{% endif %}">
-						      <a href="{{ page.url }}">{{ item.titleSS }}</a>
+						    <li class="item item-nav{% if item.urlSS == page.url %} item-current{% endif %}">
+                              <a href="{{ item.urlSS }}">{{ item.titleSS }}</a>
                             </ul>
 					</li>
 					{% endfor %}
