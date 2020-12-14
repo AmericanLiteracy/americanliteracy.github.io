@@ -42,11 +42,23 @@ navigation_header:
   titleSS: Hoem
   url: /index
   urlSS: /ss/index
-- title: Work
-  titleSS: Work
-  url: /ts/work
-  urlSS: /ss/work
-- title: Contact
-  titleSS: Contact
+- title: SoundSpel
+  titleSS: SoundSpel
+  url: /ts/soundspel
+  urlSS: /ss/soundspel
+- title: Tools
+  titleSS: Tools
+  url: /ts/tools
+  urlSS: /ss/tools
+- title: History
+  titleSS: History
+  url: /ts/history
+  urlSS: /ss/history
+- title: Publications
+  titleSS: Publications
+  url: /ts/publications
+  urlSS: /ss/publications
+- title: contact
+  titleSS: contact
   url: /ts/contact
   urlSS: /ss/contact
