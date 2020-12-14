@@ -41,12 +41,12 @@ navigation_header:
 - title: Home
   titleSS: Hoem
   url: /index
-  urlSS: /indexSS
+  urlSS: /ss/index
 - title: Work
   titleSS: Work
-  url: /work
-  urlSS: /workSS
+  url: /ts/work
+  urlSS: /ss/work
 - title: Contact
   titleSS: Contact
-  url: /contact
-  urlSS: /contactSS
+  url: /ts/contact
+  urlSS: /ss/contact
