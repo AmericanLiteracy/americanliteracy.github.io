@@ -14,8 +14,8 @@ keep_files:
 
 
 # Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
+title: "American Literacy Council"
+subtitle: "Advocates for Simplified Spelling"
 url: "http://https://americanliteracy.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""
@@ -35,3 +35,15 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+# Site navigation
+navigation_header:
+- title: Home
+  url: /index.html
+  ss: /ss/index.html
+- title: Work
+  url: /ts/index.html
+  ss: /ss/index.html
+- title: Contact
+  url: /ts/contact.html
+  ss: /ss/contact.html

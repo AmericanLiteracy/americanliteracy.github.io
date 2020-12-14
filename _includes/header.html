@@ -20,14 +20,24 @@
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><ul>
+                <ul class="nav navbar-nav navbar-right">
+					{% for item in site.navigation_header %}
+						{% if item.url contains '://' %}
+							{% assign url = item.url %}
+						{% else %}
+							{% assign url = item.url | relative_url %}
+						{% endif %}
+					<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
+						<a href="{{ item.url }}">{{ item.title }}</a>
+					</li>
+					{% endfor %}
+                <!--<li><ul>
                     <li><a href="{{ site.baseurl }}/">Home</a>
                     <li><a href="{{ site.baseurl }}/">Hoem</a> </ul>
                 <li><a href="{{ site.baseurl }}/work">Work</a></li>
                 <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
                 <li><a href="#">Service</a></li>
-                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li> -->
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
