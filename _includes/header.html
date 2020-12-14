@@ -15,7 +15,8 @@
             <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-              Americal Literacy Council
+              <ul><li>Americal Literacy Council
+              <li>Advocates for Spelling Reform</ul>
               <!-- <img src="{{ site.baseurl }}/img/logo.png" alt="Logo"> -->
             </a>
           </div>
@@ -23,14 +24,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 					{% for item in site.navigation_header %}
-					<li>
-                        <li><ul>
-						    <li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
-                              <a href="{{ item.url }}">{{ item.title }}</a>
-						    <li class="item item-nav{% if item.urlSS == page.url %} item-current{% endif %}">
-                              <a href="{{ item.urlSS }}">{{ item.titleSS }}</a>
-                            </ul>
-					</li>
+						<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">
+                        <a href="{{ item.url }}">{{ item.title }}</a>
+						<!--<li class="item item-nav{% if item.urlSS == page.url %} item-current{% endif %}">
+                        <a href="{{ item.urlSS }}">{{ item.titleSS }}</a>
+                        </ul>-->
+					    </li>
 					{% endfor %}
                 <!--<li><ul>
 					<li class="item item-nav{% if item.url == page.url %} item-current{% endif %}">

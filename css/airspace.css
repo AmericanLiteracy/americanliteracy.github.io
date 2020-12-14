@@ -62,7 +62,7 @@ a:active {
   color: #666;
 }
 .item-current {
-	background-color: #ebebeb;
+	background-color: #cfffe5;
 	border-radius: 4px;
 	list-style-position: inside;
 	color: black;
