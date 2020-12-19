@@ -58,6 +58,10 @@ navigation_header:
   titleSS: Publications
   url: /ts/publications/
   urlSS: /ss/publications/
+- title: Blog
+  titleSS: Blog
+  url: /blog
+  urlSS: /ss/blog
 - title: contact
   titleSS: contact
   url: /ts/contact/
