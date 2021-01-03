@@ -54,12 +54,12 @@ navigation_header:
   titleSS: History
   url: /ts/history/
   urlSS: /ss/history/
-- title: Publications
-  titleSS: Publications
-  url: /ts/publications/
-  urlSS: /ss/publications/
-- title: Blog
-  titleSS: Blog
+- title: Links
+  titleSS: Links
+  url: /ts/links/
+  urlSS: /ss/links/
+- title: News
+  titleSS: News
   url: /blog
   urlSS: /ss/blog
 - title: contact
