@@ -42,10 +42,6 @@ navigation_header:
   titleSS: Hoem
   url: /index.html
   urlSS: /ss/index/
-- title: SoundSpel
-  titleSS: SoundSpel
-  url: /ts/involve.html
-  urlSS: /ss/involve/
 - title: Samples
   titleSS: Samples
   url: /ts/soundspel/
