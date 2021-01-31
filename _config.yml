@@ -44,6 +44,10 @@ navigation_header:
   urlSS: /ss/index/
 - title: SoundSpel
   titleSS: SoundSpel
+  url: /ts/involve/
+  urlSS: /ss/involve/
+- title: Samples
+  titleSS: Samples
   url: /ts/soundspel/
   urlSS: /ss/soundspel/
 - title: Tools
