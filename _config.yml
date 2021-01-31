@@ -42,10 +42,10 @@ navigation_header:
   titleSS: Hoem
   url: /index.html
   urlSS: /ss/index/
-- title: Samples
-  titleSS: Samples
+- title: SoundSpel
   url: /ts/soundspel/
-  urlSS: /ss/soundspel/
+- title: Samples
+  url: /ts/samples/
 - title: Tools
   titleSS: Tools
   url: /ts/tools/
