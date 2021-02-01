@@ -46,22 +46,6 @@ navigation_header:
   url: /ts/soundspel/
 - title: Samples
   url: /ts/samples/
-- title: Tools
-  titleSS: Tools
-  url: /ts/tools/
-  urlSS: /ss/tools/
-- title: History
-  titleSS: History
-  url: /ts/history/
-  urlSS: /ss/history/
-- title: Links
-  titleSS: Links
-  url: /ts/links/
-  urlSS: /ss/links/
-- title: News
-  titleSS: News
-  url: /blog
-  urlSS: /ss/blog
 - title: contact
   titleSS: contact
   url: /ts/contact/
