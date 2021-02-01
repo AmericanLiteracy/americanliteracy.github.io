@@ -46,7 +46,5 @@ navigation_header:
   url: /ts/soundspel/
 - title: Samples
   url: /ts/samples/
-- title: contact
-  titleSS: contact
-  url: /ts/contact/
-  urlSS: /ss/contact/
+- title: about
+  url: /ts/about/
