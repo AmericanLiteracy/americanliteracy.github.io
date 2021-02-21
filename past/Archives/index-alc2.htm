@@ -1,0 +1,459 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<TITLE>American Literacy Council, Web Site for Literacy Information</TITLE>
+<meta name="description" content="Resources related to English literacy, dyslexia, phonics and teaching reading.">
+<meta name="keywords" content="ESL, spelling, EFL, dyslexia, phonics, reading comprehension, teaching reading, Illiteracy, whole language, spelling bee, English as a second language, reading worksheets, learning disability">
+<meta name="revisit-after" content="10 days">
+<meta name="copyright" content="Web Site Content Copyright (c) 2006, 2007, 2008. Anerican Literacy Council. All Rights Reserved.">
+<meta name="distribution" content="US">
+<meta name="author" content="American Literacy Council">
+<meta name="content-language" content="en">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Window-target" content="_top">
+<meta http-equiv="imagetoolbar" content="no">
+<!--link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.2.0/build/reset-fonts-grids/reset-fonts-grids.css"-->
+<STYLE type="text/css"><!--
+/*FROM YAHOO BELOW*/
+
+/*body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}*/
+
+/* Controls the colors of link-navigation boxes. No box surround*/
+a:hover{color:maroon; text-decoration:underline;background-color:yellow; font-size:9.5pt; font-family:Arial;font-weight:bold; text-align:left; line-height:14px;}
+a:link{color:black; text-decoration:underline; font-size:9.5pt; font-family:Arial; font-weight:bold; text-align:left; background-color:#ffffbb; line-height:14px;}
+a:visited{color:black; text-decoration:underline; font-size:9.5pt; font-family:Arial; font-weight:bold; text-align:left; background-color:#ffffdd; line-height:14px;;}
+a:active{color:black; text-decoration:underline; font-size:9.5pt; font-family:Arial; font-weight:bold; text-align:left;line-height:14px;background-color:#ffffcc; }
+
+/* p3 Allows a third style of link lines when screens are below 1024 wide*/
+.pt3 a:link { font-weight:bold; font-size:9.5pt; font-family: Arial; line-height:14px; background-color:#ffffbb; color:black; text-decoration:underline; text-align:center; }
+.pt3 a:visited { font-weight: 500; font-size: 9.5pt; color:maroon; background-color:#ffffcc;font-family: Arial; text-decoration:underline;line-height:14px;text-align:center; }
+.pt3 a:active { font-weight: bold; color: black; font-size:9.5pt; font-family:Arial;text-decoration: underline;background-color:#ffffbb; color:maroon; border:0px; line-height:14px;}
+.pt3 a:hover { font-weight: bold; color:navy; background-color:yellow;font-family:Arial;font-size:9.5pt; text-decoration: underline; line-height:14px; text-align:center;}
+
+img{border: none 0px #ffffff;}
+h1{background-color: #ffcc00;border-bottom: solid 1px #333333;padding: 2px;margin: 0px;font-size: x-large;} h2{font-size: large;}
+p, span{font-size: 11pt;}
+
+/* Real menu */
+ul, li{font-family:Arial;font-size: 9.5pt; font-weight:bold;line-height:12px;margin-right:0px;margin-left:0px;margin-bottom: 7px;display: block; background-color:#ffffcc;}
+ul{font-family:Arial;font-size:9.5pt; font-weight:bold; line-height:12px; width: 182px;border: solid 1 px #333333;border-top: solid 1px #333333;border-right: solid 1px #333333; background-color:#ffffcc;}
+li ul{display: none;position: absolute;font-weight:bold; margin-left:182px;margin-top: -26px; background-color:#ffffcc;line-height:10px; font-size:9.5pt;font-weight:bold;
+text-decoration:underline;} /*2nd LEVEL ITEMS*/
+li a{font-family: Arial; font-size: 9.5pt; font-weight:bold;line-height:12px; text-decoration: underline;color: #000000;background-color: #ffffcc;width: 200px;
+padding-bottom:2px;display: block;font-weight:bold;}
+/*li a:hover {background-color: yellow; text-decoration:underline; font-size:9.5pt;font-weight: bold;line-height:12px; border-bottom: solid 0px #333333;}
+li a:visited {font-weight:500; line-height:12px;font-size:9.5pt;text-decoration:underline;font-weight:bold;} */
+
+li{float: left;width:100%;}
+/*a.hassubmenu{line-height:15px;background-image: url(./images/lay_dmnuhassub.gif);background-repeat: no-repeat;background-position: 188px;}*/
+#mainmenu{margin:0px;margin-left:0px;float: left;border-bottom: solid 0px #333333;margin-bottom: 0px;; font-size:9pt; line-height:18px;
+font-family:verdana,Arial;font-weight:bold;background-color:#ffffcc;}
+
+div#container
+{ width: 768px;height:1700px; position: relative; margin-top: 0px; margin-left:95px; margin-right: auto; margin-bottom:auto; text-align:center; border-width:8px; border-style:inset ridge; 
+border-color:brown; background-color:#eeeeff; padding-left:0px;z-index:1;}
+body{ text-align: center; margin: 0px; background-image:url(ALC-ARCHIVE/April-2009/images/bkgnd.gif); background-repeat: repeat;}
+--></STYLE>
+</HEAD>
+
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="runVert();initialiseMenu();setVariables();checkLocation();"><!-- onMouseMove="overhere()"-->
+
+<!--move entire container to right by 150px if width=1024-->
+<script language="javascript"><!-- 
+if(screen.Width<1025){document.write("<DIV id='container' class='container' style='margin-left:150px;'>");}
+else{document.write("<DIV id='container' class='container'>");}
+--></script>
+
+<div id="ToolTip" class="tooltip"></div>
+
+<!--verticalLeftBorder-->
+<div style="top:31px; left:0px; height:1655px;width:16px; position:absolute;z-index:0;background-color:#443300;"></div>
+
+<!--Light Tan Background Block-->
+<Div style="height:394px; width:736px; left:16px; top:16px; background-color:#ffffdd;position:absolute;z-index:-1;"></div>
+
+<!--horiz top Border-->
+<div style="top:0px; left:14px; width:99%; height:16px; background-color:#443300;position:absolute;z-index:0;">
+<span style="font-size:6.5pt; color:white;;"> &nbsp; &nbsp; Must Use MS Internet Explorer Browser Only.</span>
+
+<!--horiz middle Border-->
+<IMG src="ALC-ARCHIVE/April-2009/images/borderbox1.jpg" style="width:738px; height:5px;position:absolute; left:1px; top:410px; z-index:0"></img>
+
+<!--LittleIconTop Left-->
+<IMG src="ALC-ARCHIVE/April-2009/images/ALClogo32.jpg" style="background-color:white; position:absolute; left:-15px;top:0px; z-index:1;"></img>
+
+<!--Big Top Logo -->
+<IMG src="ALC-ARCHIVE/April-2009/images/logo1.jpg" style="height:232px; width:516px; position:absolute; left:120px;top:25px;z-index:1"></img>
+
+<!--Central Banner Under Logo -->
+<IMG src="ALC-ARCHIVE/April-2009/images/banner6.jpg" style="width:582px; height:148px;position:absolute; left:90px;top:255px;z-index:1"></img></div>
+
+<IMG src="ALC-ARCHIVE/April-2009/images/alanlandscape3.jpg" style="width:310px; height:100px; position:absolute; left:16px; top:415px; z-index:0">
+<!-- Word from the president-->
+<div style="top:515px;left:26px; width:293px; height:470px; background-color:#ffffdd; border:2 solid #ddddff; position: absolute;font-family :verdana; font-size:9pt;line-height:15px; padding-right:2px; padding-left:4px;z-index:0;text-align:left;">
+<br><b> &nbsp; &nbsp; Welcome from the President</b><br><br>
+On behalf of the Board Members we offer you a warm and sincere welcome. We're pleased you're visiting this warehouse of information about literacy. I'm standing here high above our Boulder Colorado literacy research center. A second Center is North of New York City at Croton-On-Hudson.<br><br>Be sure to read about our mission and goals. If you arrived here after querying on a search engine, you'll find we've uncovered innovative and surprising concepts related to literacy. <br><br>After more than 150 years of scholarly research and publications issued from this organization, we continue to seek and find tools, concepts, and action plans that help counter the dismal literacy statistics found in most English-speaking countries.<br><br>More than 22 million people in the US can't distinguish one medicine label from another. Unable to compare two newspaper ads, they can't determine the better deal. The pockets of illiteracy are known. Survey numbers have been broken down to State and County levels.<br><br>ALC Board Members have agreed that this web site should be a portal to world-wide literacy innovations and concepts. If you search the Internet for "ESL" for example, you'll get nearly eight million results. However, most teachers, parents, and literacy coaches will rarely see more than the top ten of those eight million listings.<br><br>Consider this ALC site to be a portal, your doorway that opens upward from the bottom of those search lists, attempting to glean and filter from wide-spread Institutions and scholars surprising new solutions, innovative technologies, and tools for engaging more boldly in the battle for literacy. We even have a few products of our own that you may find useful. I can be reached here: PresidentALC2@AmericanLiteracy.com<br><br> Warm Regards, Robert Alan Mole,<br>President<br><br></div>
+
+<!--Portal with globe graphic -->
+<IMG src="ALC-ARCHIVE/April-2009/images/portalheading.jpg" style="position:absolute; left:390px;top:425px;z-index:0"></img>
+<IMG src="ALC-ARCHIVE/April-2009/images/portalfinal.jpg" style="top:640px; height:240px; width:240px; position:absolute; left:500px;z-index:0"></img>
+<IMG src="ALC-ARCHIVE/April-2009/images/heading-under.jpg" style="top:885px; position:absolute; left:525px;z-index:0; width:200; height:15px;"></img>
+
+<!--Right Side of Front Page -->
+<div style="top:490px;left:330px; width:410px; height:auto; background-color:transparent; border:0 solid #ddddff; position: absolute;font-family :Arial; font-size:11pt;line-height:18px; text-align:left; padding-right:1px; padding-left:4px; z-index:0">
+
+Similar to a ship's window, this web site enables you to peer out from your private world of teaching, parenting, coaching, or literacy center management. There's an ocean of literacy information out there - over 35 million items on the Internet search engines related to illiteracy, literacy, ESL, dyslexia, phonics, and spelling reform that you could view and analyze - although not in your lifetime.<br><br>
+
+Therefore we've selected from that<br>storehouse, specific items that<br>can lead you to further<br>exploration. As this site<br> continues to fill up<br>with pointers and links<br>to the larger world out<br>there, you'll be em-<br>powered to move<br>further in your study of<br>literacy-related topics.<br><br>On this site we've<br>collected scholarly<br>articles as well as<br>practical "how-to" case<br>studies. There are recordings, videos, conceptual debates, sources for software packages, links to classroom materials, lists of funding sources, professional organizations, statistical studies, and examples of innovative initiatives.<br><br>
+
+A high percentage of our visitors get here by using one or another of the common search engines. Yahoo/Overture, Google, and MSN Search are used most frequently. We know the audience is vast because the Nielson company and other rating companies keep counts on the searching traffic. You have many intellectual partners if you're concerned about literacy. The following topic areas reveal <u>how many people did searches</u> in June of 2007 in these subject areas:<br><br>
+<center><b>SEARCHES PER MONTH</b></center>
+<table summary="One Month Search traffic" border="1" style="font-family:arial; font-size:9.5pt;margin-left:15px;border-color:blue;">
+<tr>
+<td>&nbsp;ESL and EFL</td>
+<td>&nbsp;53,840</td>
+<td>&nbsp;Major topic for educators</td>
+</tr>
+<tr>
+<td>&nbsp;Spelling</td>
+<td>&nbsp;45,000</td>
+<td>&nbsp;Skewed by searches for <br>&nbsp; &nbsp; "Spelling Bee"</td>
+</tr>
+<tr>
+<td>&nbsp;Dyslexia</td>
+<td>&nbsp;36,381</td>
+<td>&nbsp;Major topic for special ed staff</td>
+</tr>
+<tr>
+<td>&nbsp;Phonics</td>
+<td>&nbsp;14,185</td>
+<td>&nbsp;Critical learning factor</td>
+</tr>
+<tr>
+<td>&nbsp;Reading</td>
+<td>&nbsp;11,862</td>
+<td>&nbsp;Comprehension evaluations</td>
+</tr>
+<tr>
+<td>&nbsp;Eng as 2nd Lang</td>
+<td>&nbsp;6,848</td>
+<td>&nbsp;ESL not abbreviated for these<br> &nbsp; &nbsp; searches</td>
+</tr>
+<tr>
+<td>&nbsp;Reading Worksheets</td>
+<td>&nbsp;3,315</td>
+<td>&nbsp;In demand for each grade level</td>
+</table><br>
+<p style="font-size:9pt; left:-255px;text-align:center; width:600px;font-weight:bold; font-family:arial; font-size:11pt; position:absolute;">
+Scroll up to see the menu on the left side. Hover your mouse on the various items shown there to see a description of the contents for each area. Bookmark this page to assist an easy return to this site.<br><br></p>
+</div><div><br>
+<IMG src="ALC-ARCHIVE/April-2009/images/girlatcomputer1.jpg" style="top:1475px;position:absolute; left:35px;z-index:0;"></img>
+<IMG src="ALC-ARCHIVE/April-2009/images/bluegirl2inch.jpg" style="top:1475px; position:absolute; left:275px;z-index:0;"></img>
+<IMG src="ALC-ARCHIVE/April-2009/images/oldman-b.jpg" style="top:1475px; position:absolute; left:530px;z-index:0; "></img>
+
+
+
+<!--Menu Frame - smaller LINK letters when screenwidth<1024--> 
+<script language="javascript"><!--
+if (screen.Width<1024){document.write('<div id="menu" style="width:170px; position:absolute; z-index:4;" class="pt3">');}
+else{document.write('<div id="menu" style="width:170px; position:absolute; z-index:4;">');}
+--></script
+
+><!--DIV ID="menu" style="width:auto; position:absolute; z-index:4;"--> <!--top controlled by code below-->
+<table border="0" cellpadding="0" cellspacing="0" width="275" style="background-color:transparent;font-weight:bold;">
+<tr>
+<!--td>&nbsp;</td--><!-- ONLY TWO COLUMNS WIDE--> <!-- TITLE line is here-->
+<td style="width:200px;background-color:#ffffcc; text-align:center; font-weight:bold;color:maroon; border:brown solid 1;">&nbsp; MENU &nbsp;</td>
+<td style="width:70px; background-color:transparent;">&nbsp;</td></tr>
+
+<tr valign="top">
+<td style="width:200px;font-size:9.5pt; font-weight:bold; line-height:14px;; background-color:#ffffcc; text-align:left; border:brown solid 1;">
+<!--body onload="initialiseMenu();"-->
+<ul id="mainmenu">
+<li><a href="#"><br>&nbsp;<b>1 About Us - New</b></a>
+<ul>
+<li><a href="contact-info.htm" target="item"><br>&nbsp;Contact Information</a>
+<li><a href="unique-door.htm" target="item"><br>&nbsp;This Unique Doorway</a>
+<li><a href="brief-background.htm" target="item"><br>&nbsp;Brief Background</a>
+<li><a href="site-map.htm" target="item"><br>&nbsp;ALC Site Map</a>
+</ul>
+<li><a href="#">&nbsp;<b>2 Mission and History</b></a></li>
+<ul>
+<li><a href="alc-mission.htm" target="item"><br>&nbsp;Mission Statement</a>
+<li><a href="alc-history.htm" target="item"><br>&nbsp;ALC History</a>
+<li><a href="lit-history.htm" target="item"><br>&nbsp;U.S. History of Literacy</a>
+</ul>
+<li><a href="#">&nbsp;<b>3 ALC Management</b></a></li>
+<ul>
+<li><a href="alc-board.htm" target="item"><br>&nbsp;ALC Board Members</a>
+<li><a href="alc-friends.htm" target="item"><br>&nbsp;Contributors and Friends</a>
+</ul>
+<li><a href="#">&nbsp;<b>4 Software to Assist Reading</b></a></li>
+<ul>
+<li><a href="ALC-ARCHIVE/April-2009/SW/sound-write.htm" target="item"><br>&nbsp;Sound-Write Software</a>
+<li><a href="http://www.ententetranslator.com/IDL.htm" target="_blank"><br>&nbsp;Double-line Software</a>
+</ul>
+<li><a href="#">&nbsp;<b>5 Video Resources</b></a></li>
+<ul>
+<li><a href="lucy-teaches.htm" target="item"><br>&nbsp;Lucy Teaches Spelling to Rickie </a>
+<li><a href="libpatronup.htm" target="item"><br>&nbsp;Library Patron Meets<br>&nbsp; &nbsp; &nbsp; Literacy Expert</a>
+<li><a href="tutor-part2.htm" target="item"><br>&nbsp;Lucille Ball Hires<br>&nbsp; &nbsp; Grammar Expert</a>
+<li><a href="english-spelling-video.htm" target="item"><br>&nbsp;Video: DUMB is DUM<br>&nbsp;&nbsp; &nbsp; Graphic Demo</a>
+</ul>
+<li><a href="#">&nbsp;<b>6 Historic Audio - New</b></a></li>
+<ul>
+<li><a href="ALC-ARCHIVE/April-2009/audio/DeweyCen.m3u" target="item"><br>&nbsp;John Dewey Centennial<br>&nbsp; &nbsp; &nbsp;Audio-Columbia Univ<br>&nbsp; &nbsp; &nbsp;Prof Corcorian, Host</a>
+<li><a href="ALC-ARCHIVE/April-2009/audio/DeweyCon.m3u" target="item"><br>&nbsp;John Dewey Contributions<br>&nbsp; &nbsp; &nbsp;Audio-Columbia Univ<br>&nbsp; &nbsp; &nbspFulton J Sheen Host;</a>
+<li><a href="ALC-ARCHIVE/April-2009/audio/Kilpatrick-Part1.m3u" target="item"><br>&nbsp;John Kilpatrick Lecture<br>&nbsp;&nbsp;&nbsp;Part one -Columbia Univ<br>&nbsp;&nbsp;&nbsp;Fulton J Sheen Host</a>
+<li><a href="ALC-ARCHIVE/April-2009/audio/Kilpatrick-Part2.m3u" target="item"><br>&nbsp;Kilpatrick Part Two<br>&nbsp;&nbsp;&nbsp;Part two-Columbia Univ<br>&nbsp;&nbsp;&nbsp;Fulton J Sheen, Host</a>
+<li><a href="ALC-ARCHIVE/April-2009/audio/GodfreyDeweyReform.m3u" target="item"><br>&nbsp;Godfrey Dewey<br>&nbsp;&nbsp;&nbsp;Spelling Reform Lecture.<br>&nbsp;&nbsp;&nbsp;Emerson College</a>
+</ul>
+<li><a href="#">&nbsp;<b>7 Dyslexia - New</b></a></li>
+<ul>
+<li><a href="dyslexia-resources.htm" target="item"><br>&nbsp;Dyslexia Resources </a>
+<li><a href="dyslexia-diag.htm" target="item"><br>&nbsp;Dyslexia Diagnosis </a>
+</ul>
+<li><a href="#">&nbsp;<b>8 Phonics and Spelling - New</b></a></li>
+<ul>
+<li><a href="spelling1-links.htm" target="item"><br>&nbsp;Spelling Resources </a>
+<li><a href="phonics1-links.htm" target="item"><br>&nbsp;Phonics Resources </a>
+</ul>
+<li><a href="#">&nbsp;<b>9 Simplified Spelling Samples</b></a></li>
+<ul>
+<li><a href="ss-history.htm" target="item"><br>&nbsp;Simplification History</a>
+<li><a href="ss-example1.htm" target="item"><br>&nbsp;Simplification Example 1</a>
+<li><a href="ss-example2.htm" target="item"><br>&nbsp;Simplification- Example 2</a>
+<li><a href="ss-example3.htm" target="item"><br>&nbsp;Simplification- Mark Twain</a>
+<li><a href="ss-example4.htm" target="item"><br>&nbsp;Simplification- Example 4</a>
+<li><a href="ss-example5.htm" target="item"><br>&nbsp;Simplification- Example 5</a>
+<li><a href="ss-links.htm" target="item"><br>&nbsp;Related Journals</a>
+</ul>
+<li><a href="#">&nbsp;<b>10 Literacy PPT Shows</b></a></li>
+<ul>
+<li><a href="Remedy-P1-S1.htm" target="item"><br>&nbsp;Seeking Remedy Part 1</a>
+<li><a href="Remedy-P2-S1.htm" target="item"><br>&nbsp;Seeking Remedy Part 2</a>
+<li><a href="Remedy-P3-S1.htm" target="item"><br>&nbsp;Seeking Remedy Part 3</a>
+<li><a href="Remedy-P4-S1.htm" target="item"><br>&nbsp;Seeking Remedy Part 4</a>
+<li><a href="Remedy-P5-S1.htm" target="item"><br>&nbsp;Seeking Remedy Part 5</a>
+<li><a href="Remedy-P6-S1.htm" target="item"><br>&nbsp;Seeking Remedy Part 6</a>
+</ul>
+<li><a href="#">&nbsp;<b>11 English-2nd Lang. - New</b></a></li>
+<ul>
+<li><a href="esl-strategies.htm" target="item"><br>&nbsp;ESL- A New Strategy</a>
+<li><a href="esl-resources.htm" target="item"><br>&nbsp;ESL Links & Resources</a>
+</ul>
+<li><a href="#">&nbsp;<b>12 Teacher/Parent - New</b></a></li>
+<ul>
+<li><a href="parent-as-teacher.htm" target="item"><br>&nbsp;Parent as Teacher<br></a>
+<li><a href="teacher-methods.htm" target="item"><br>&nbsp;Methods of Teaching Reading<br> &nbsp;NEW 2007 INFO</a>
+<li><a href="computer-assisted-curr.htm" target="item"><br>&nbsp;Computer-Assisted Methods<br> &nbsp; NEW 2007 INFO</a>
+<li><a href="home-curriculum.htm" target="item"><br>&nbsp;Resources for Parent-Teachers<br></a>
+</ul>
+<li><a href="#">&nbsp;<b>13 Literacy Volunteer Groups</b></a></li>
+<ul>
+<li><a href="volunteer-agencies.htm" target="item"><br>&nbsp;Volunteer Agencies</a>
+</ul>
+<li><a href="#">&nbsp;<b>14 Phonic Research - New</b></a></li>
+<ul>
+<li><a href="phoneme-analysis.htm" target="item"><br>&nbsp;Phonic Purity Research & &nbsp;Files</a>
+</ul>
+
+<li><a href="#">&nbsp;<b>15 Grant Agencies - New</b></a></li>
+<ul>
+<li><a href="fed-grants.htm" target="item"><br>&nbsp;Federal Grant Agencies</a>
+<li><a href="state-initiatives.htm" target="item"><br>&nbsp;State Level Grants</a>
+<li><a href="grants-corp-and-other.htm" target="item"><br>&nbsp;Corporate & Other Grants</a>
+
+</ul>
+<li><a href="#">&nbsp;<b>16 Rondthaler Writings</b></a></li>
+<ul>
+<li><a href="spellingmatters.htm" target="item"><br>&nbsp;Short Articles </a>
+</ul>
+<li><a href="#">&nbsp;<b>17 Quotes & Statistics - New</b></a></li>
+<ul>
+<li><a href="famous-quotes.htm" target="item"><br>&nbsp;Famous Quotations </a>
+<li><a href="literacy-stats.htm" target="item"><br>&nbsp;Literacy Statistics </a>
+</ul>
+
+<li><a href="#">&nbsp;<b>18 Newsletter Samples</b></a></li>
+<ul>
+<li><a href="uuALCform.htm" target="_blank"><br>&nbsp;SIGNUP for  ALC Newsletter</a>
+<li><a href="ALC-ARCHIVE/April-2009/newsletters/February2005.pdf" target="_blank"><br>&nbsp;Sample Newsletter 02-2005</a>
+<li><a href="ALC-ARCHIVE/April-2009/newsletters/July2006.pdf" target="_blank"><br>&nbsp;Sample Newsletter  07-2006 </a>
+</ul>
+<li><a href="#">&nbsp;<b>19 Books; Bibliographies - New</b></a></li>
+<ul>
+<li><a href="book-reviews.htm" target="item"><br>&nbsp;Book Reviews</a>
+<li><a href="book-lists.htm" target="item"><br>&nbsp;Book Lists</a><br>
+</ul>
+<li><a href="#">&nbsp;<b>20 Photos - Literacy Related</b></a></li>
+<ul>
+<li><a href="photo-gallery.htm" target="item"><br>Public Domain Photos</a>
+</ul>
+<li><a href="#">&nbsp;<b>21 Site Map</b></a></li>
+<ul>
+<li><a href="site-map.htm" target="item"><br>Click Here</a>
+</ul>
+<li><a href="#" target="_self" onClick="self.close();">&nbsp;<b>22 EXIT This Web Site.</b></a></li>
+</ul>
+
+</td> <!-- Travelling MENU button is here-->
+<td class="pt2" style="width:70px; text-align:right;"><br><br><a href="javascript:getmenu('menu')"> <span> <style="background-color:yellow;"><B>&nbsp;MENU&nbsp;<br></B></span></a></td>
+</tr></table>
+</div>
+
+<HEAD>
+<script language="javascript" type="text/javascript"> 
+<!-- //Menu up-down left-right code here
+
+var vTop=68; var hLeft=-178; var inc; var dMenu; var YY=1; var XX1=-1; var XX2=-1; var XX3=-1; var mmove="no"; var jj;
+var ystart=0; var www=screen.Width; var vectorDir;
+
+function runVert() {if (document.layers) {document.menu.left=hLeft;document.menu.top=vTop;}
+if (document.all) {menu.style.posLeft=hLeft;menu.style.posTop=vTop;} }
+
+function getmenu(clickedmenu) {if (mmove=="no") { if (document.layers) {dMenu=eval("document."+clickedmenu) }
+ if (document.all) {dMenu=eval("document.all."+clickedmenu+".style") }
+inc=18; checkvectorDir(); movemenu(); } } // horizMove amount * 3 ??
+
+function checkvectorDir() {if (document.layers) {if (dMenu==document.menu){XX1=XX1*-1;YY=XX1};}
+if (document.all) {if (dMenu==menu.style){XX1=XX1*-1;YY=XX1};}
+mmove="no";}
+
+function movemenu() {if (document.layers) {if (inc>=0) {dMenu.left+=inc*YY;inc--;
+var movetimer=setTimeout("movemenu()",1); }
+else {mmove="no";clearTimeout(movetimer); } }
+if (document.all) { if (inc>=0) {dMenu.posLeft+=inc*YY; inc--;
+var movetimer=setTimeout("movemenu()",1); }
+else {mmove="no"; clearTimeout(movetimer); } } }
+
+function setVariables(){if (navigator.appName == "Netscape") { v=".top=";h=".left=";dS="document.";sD="";
+y="window.pageYOffset";x="window.pageXOffset";iW="window.innerWidth";iH="window.innerHeight"; }
+else {h=".pixelLeft=";v=".pixelTop=";dS="";sD=".style";
+jj=y="document.body.scrollTop+38"; x="document.body.scrollLeft"; iW="document.body.clientWidth"; iH="document.body.clientHeight"; }
+xyz=500; object="menu";
+checkLocationA(); }
+movex=0,movey=0,xdiff=0,ydiff=0,ystart=0,xstart=0;
+
+function checkLocation(){innerX=eval(iW)-110 // these two adjustments are for
+innerY=10; //yeval(iH)-140 // the size of the table menu
+if (document.layers){innerY-=10;innerX-=10} // this adjustment is because Netscape counts scroll bars
+yy=eval(y); xx=eval(x); ydiff=ystart-yy; xdiff=xstart-xx;    ydiff=0;
+if ((ydiff<(-1))||(ydiff>(1))) movey=Math.round(ydiff/20),ystart-=movey;
+/*if ((xdiff<(-1))||(xdiff>(1))) movex=Math.round(xdiff/20),xstart-=movex */
+eval(dS+object+sD+v+(ystart+innerY)); //eval(dS+object+sD+h+(xstart+innerX));
+/*eval(dS+object+sD+v+(ystart))// removing the innerY value stops the verticle adjust*/
+/*eval(dS+object+sD+h+(xstart))// removing the innerX value stops the horizonal adjust*/
+setTimeout("checkLocation()",1);}
+
+function checkLocationA(){ystart=eval(y); xstart=eval(x); }
+
+//TOOLTIP CODE BELOW ***************************
+if(screen.Width<1024){document.write('<span class="tooltipcontent" style="font-size:6pt;">');}
+var ie = document.all ? 1 : 0
+var ns = document.layers ? 1 : 0
+if(ns){doc = "document."; sty = ""}
+if(ie){doc = "document.all."; sty = ".style"}var initialize = 0; var Ex, Ey, topColor, subColor, ContentInfo;
+topColor = "#663300"; subColor = "#ffffdd"; Ey="68";
+
+if(ns){Ex = "e.pageX"; Ey = "e.pageY-75";   Ey=68;    window.captureEvents(Event.MOUSEMOVE); window.onmousemove=overhere; }
+else {Ex = "event.x"; Ey = "event.y-75";   Ey=68;}  /*alert(window.screen.Height);alert(window.screen.Top);} ********************/
+
+function MoveToolTip(layerName, FromTop, FromLeft, e){
+/*if(ie){eval(doc + layerName + sty + ".top = " + (eval(FromTop) - (document.body.scrollTop/40)+40));}
+if(ns){eval(doc + layerName + sty + ".top = " + eval(FromTop));}*/
+
+if(ie){eval(doc + layerName + sty + ".top = " + (eval(FromTop) - (document.body.scrollTop/40)+40));}
+if(ns){eval(doc + layerName + sty + ".top = " + eval(FromTop));}
+
+eval(doc + layerName + sty + ".left = " + (eval(FromLeft) + 65));} /*############## */
+
+function Activate(){initialize=1}; function deActivate(){initialize=0}
+
+function overhere(e){
+if(initialize){Ey=68;  MoveToolTip("ToolTip",Ey, Ex, e); eval(doc + "ToolTip" + sty + ".visibility = 'visible'") }
+else {MoveToolTip("ToolTip", 0, 0); eval(doc + "ToolTip" + sty + ".visibility = 'hidden'")  } }
+
+function EnterContent(layerName, TTitle, TContent){return;
+if(www<1024){ContentInfo = '<table style="border:1px; padding-left:4px; width:250px;">'+
+'<tr><td style="padding-left:4px; background-color:#442200;width:250px;">'+ 
+'<table style="border:1px; padding-left:4px; width:260px;">'+ 
+'<tr><td style="padding-left:4px; background-color:663300; width:250px;">'+ 
+'<table style="border:1px; padding-left:4px;width:250px;">'+ 
+'<tr><td style="padding-left:4px;width:250px;">'+ 
+'<font class="tooltiptitle2">&nbsp;'+TTitle+'</font>'+
+'</td></tr>'+
+'</table>'+
+'</td></tr>'+
+'<tr><td style="padding-left:4px;background-color:ffffdd;width:250px;">'+
+'<table style="border:1px; padding-left:4px; width:250px;">'+ 
+'<tr><td style="width:250px;">'+ 
+'<font class="tooltipcontent2">'+TContent+'</font>'+
+'</td></tr>'+
+'</table>'+
+'</td></tr>'+
+'</table>'+
+'</td></tr>'+
+'</table>';
+ReplaceContent(layerName)} 
+//Bigger than 800Wide below..
+else{ContentInfo = '<table style="border:1px; padding-left:4px; width:280px;">'+
+'<tr><td style="padding-left:4px; background-color:#442200;width:280px;">'+ 
+'<table style="border:1px; padding-left:4px; width:280px;">'+ 
+'<tr><td style="padding-left:4px; background-color:663300; width:280px;">'+ 
+'<table style="border:1px; padding-left:4px;width:280px;">'+ 
+'<tr><td style="padding-left:4px;width:280px;">'+ 
+'<font class="tooltiptitle">&nbsp;'+TTitle+'</font>'+
+'</td></tr>'+
+'</table>'+
+'</td></tr>'+
+'<tr><td style="padding-left:4px;background-color:ffffdd;width:280px;">'+
+'<table style="border:1px; padding-left:4px; width:280px;">'+ 
+'<tr><td style="width:280px;">'+ 
+'<font class="tooltipcontent">'+TContent+'</font>'+
+'</td></tr>'+
+'</table>'+
+'</td></tr>'+
+'</table>'+
+'</td></tr>'+
+'</table>';
+ReplaceContent(layerName)} }// END OF TOOLTOP CODE
+
+function showSubMenu(){
+var objThis = this;
+for(var i = 0; i < objThis.childNodes.length; i++)
+{if(objThis.childNodes.item(i).nodeName == "UL")
+{objThis.childNodes.item(i).style.display = "block";
+}} }
+
+function hideSubMenu()
+{var objThis = this;
+for(var i = 0; i < objThis.childNodes.length; i++)
+{if(objThis.childNodes.item(i).nodeName == "UL")
+{objThis.childNodes.item(i).style.display = "none";return;
+}} }
+
+function initialiseMenu()
+{var objLICollection = document.body.getElementsByTagName("LI");
+for(var i = 0; i < objLICollection.length; i++)
+{var objLI = objLICollection[i];
+for(var j = 0; j < objLI.childNodes.length; j++)
+{if(objLI.childNodes.item(j).nodeName == "UL")
+{objLI.onmouseover=showSubMenu;
+objLI.onmouseout=hideSubMenu;
+for(var j = 0; j < objLI.childNodes.length; j++)
+{ if(objLI.childNodes.item(j).nodeName == "A")
+{objLI.childNodes.item(j).className = "hassubmenu";
+}}}} } }
+
+window.opener=self;
+-->
+</script>
+</head></body></html>
