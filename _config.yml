@@ -39,9 +39,7 @@ descriptions:
 # Site navigation
 navigation_header:
 - title: Home
-  titleSS: Hoem
   url: /index.html
-  urlSS: /ss/index/
 - title: SoundSpel
   url: /ts/soundspel/
 - title: Samples
